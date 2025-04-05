@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css" />
+  <title>Pats sau gidas</title>
+</head>
+<body>
+  <div id="welcome-screen">
+    <h1>Sveiki atvykę į</h1>
+    <h2>Pats sau gidas</h2>
+    <button onclick="startApp()">Pradėti</button>
+  </div>
+
+  <div id="guide-screen" style="display:none;">
+    <h2>Druskininkų audio gidas</h2>
+    <div class="card">
+      <h3>Druskininkų įžanga</h3>
+      <audio controls src="00. druskininkai no fx.mp3"></audio>
+      <p>Trumpa įžanga apie Druskininkų istoriją ir reikšmę.</p>
+    </div>
+    <div class="card">
+      <h3>Druskininkų muziejus</h3>
+      <audio controls src="01. Druskininku muziejus AA.mp3"></audio>
+      <p>Sužinokite apie Druskininkų muziejų – vieną svarbiausių kultūros objektų.</p>
+    </div>
+    <div class="card">
+      <h3>Druskininkų bažnyčia</h3>
+      <audio controls src="02. Baznycia.mp3"></audio>
+      <p>Įdomūs faktai apie Druskininkų Švč. Mergelės Marijos bažnyčią.</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
